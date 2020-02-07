@@ -1,7 +1,6 @@
 {
   "name": "api-rest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,11 +12,21 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.8.11",
     "require-dir": "^1.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItaloRFeitosa/api-rest-jwt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ItaloRFeitosa/api-rest-jwt/issues"
+  },
+  "homepage": "https://github.com/ItaloRFeitosa/api-rest-jwt#readme",
+  "description": ""
 }

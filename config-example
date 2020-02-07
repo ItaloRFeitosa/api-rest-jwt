@@ -1,0 +1,7 @@
+module.exports = {
+    uri: "mongodb://localhost:27017/apirest",
+    //uri: 'mongodb+srv://italo:uBpKLuyxHBnM16kA@apimongo-6vn6x.gcp.mongodb.net/test?retryWrites=true&w=majority',
+    port: 3000
+  };
+
+// 

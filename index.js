@@ -3,9 +3,11 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const requireDir = require('require-dir');
 
+const config = require('./config');
+
 const app = express();
 
-const connectionString = 'mongodb+srv://italo:uBpKLuyxHBnM16kA@apimongo-6vn6x.gcp.mongodb.net/test?retryWrites=true&w=majority';
+const connectionString = config.uri;
 mongoose.connect(connectionString);
 mongoose.Promise = global.Promise;
 
@@ -20,4 +22,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/api', require("./src/routes"));
 
 
-app.listen(3000);
+app.listen(config.port);
